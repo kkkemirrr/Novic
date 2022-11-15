@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'GilroyM';
+    src: url(./assets/fontss/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: 'GilroyB';
+    src: url(./assets/fontss/Gilroy-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'GilroyB', sans-serif;
+}
+.line{
+    width: 940px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.header__links{
+    position: relative;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__links::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #828282;
+
+}
+.header__link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+.header__link_active{
+    color: black;
+}
+.profile__infa{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 30px 0;
+}
+.profile__name{
+    font-size: 47.3392px;
+    line-height: 59px;
+    /* Black */
+    color: #070707;
+    
+}
+.profile__text{
+    font-family: 'GilroyM';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    margin: 50px 0 0 0;
+}
+.profile__lang{
+    transform: rotate(-90deg) translate(0, 80px);
+    text-transform: uppercase;
+    font-family: 'GilroyM', sans-serif;
+    color: gray;
+}
+.profile__humb{
+    width: 24px;
+    height: 2px;
+    background: black;
+    position: relative;
+    display: none;
+}
+.profile__humb::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: black;
+    top: -6px;
+    left: 0;
+}
+.profile__humb::after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: black;
+    top: 6px;
+    left: 0;
+}
+span{
+    font-family: 'GilroyM' sans-serif;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    color: #070707;
+}
+span::before{
+    content: '';
+    width: 1px;
+    height: 20px;
+    border-left: 2.5px solid black;
+    position: absolute;
+    top: 4px;
+    left: 26.5px;
+}
+.about__title{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+    padding: 120px 0 0 0;
+}
+.about__p{
+    width: 485.34px;
+    height: 218px;
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+    margin: 17px 0 -120px 240px;
+    
+}
+.about{
+    height: 506px;
+    background: #F6F6F6;
+}
+.skils__title {
+    font-family: 'GilroyB';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0px 0 70px 0;
+    /* Black */
+    
+    color: #070707;
+}
+.skils__sub-title {
+    font-family: 'GilroyM';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px 0 83px 0;
+
+    
+    /* Black */
+    
+    color: #070707;
+}
+.skils__programs {
+    height: 237px;
+    width: 936px;
+    display: flex;
+    justify-content: space-between;
+
+    /* border: 1px solid black; */
+}
+.skils__items {
+    height: 205px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+.skils__text {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'GilroyB';
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #828282;
+}
+.skils-text {
+    font-family: 'GilroyB';
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #828282;
+}
+.portf{
+    height: 2253px;
+    background: #F6F6F6;
+}
+.portf__portfolio{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+    margin: 112px 0 0 0;
+}
+.portf__woman{
+    margin: 47px 0 0 0;
+}
+.portf__fation{
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    /* Black */
+    color: #070707;
+    margin: 44px 0 0 0;
+}
+.portf__rebook{
+    margin: 99px 0 0 0;
+}
+.portf__stor{
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    /* Black */
+    color: #070707;
+    margin: 44px 0 0 0;
+}
+.portf__camera{
+    margin: 99px 0 0 0;
+}
+span::before{
+    display: none;
+}
+.portf__braun{
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    /* Black */
+    color: #070707;
+    margin: 99px 0 0 0;
+}
+.end__title{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+    margin: 114px 0 0 0;
+
+}
+.end__subtitle{
+    width: 275px;
+    height: 44px;
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    /* Black */
+    color: #070707;
+    margin: 20px 0 0 325px;
+}
+.end__sm{
+    width: 166px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    background: #070707;
+    border-radius: 20px;
+    margin: 39px 0 0 385px;
+}
+.end__icons{
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 0 300px;
+}
+.end__like{
+    font-family: 'GilroyM', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin: 45px 0 0 0;
+}
+.end__linke{
+    font-family: 'GilroyM', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+.profile__imgc{
+    display: none;
+}
+.portf__womans{
+    display: none;
+}
+.portf__rebooks{
+    display: none;
+}
+.portf__cameras{
+    display: none;
+}
+@media screen and (max-width: 375px){
+    .line{
+        width: 375px;
+        max-width: 375px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    .header{
+        display: none;
+    }
+    .profile__humb{
+        display: block;
+        margin: 35px 30px 0 0;
+    }
+    .profile__text{
+        margin: 140px 0 0 -250px;
+    }
+    .profile__lang{
+        display: none;
+    }
+    .profile__name{
+        margin: 15px 0 0 30px;
+    }
+    .profile__imgc{
+        display: block;
+        margin: 20px 0 0 30px;
+    }
+    .profile__imgc img{
+        width: 316px;
+        height: 478px;
+        margin: 10px 30px 0 0;
+    }
+    .profile__img{
+        display: none;
+        width: 100%;
+    }
+    .about__title{
+        margin: 44px 0 30px 0;
+        padding: 80px 0 0 0;
+    }
+    .about__p{
+    width: 316px;
+    height: 261px;
+    font-family: 'GilroyM', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0 -100px -130px 25px;
+    }
+    .skils__items{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 60px;
+    }
+    .skils{
+        margin: 0px 0 0px 0;
+        height: 1421px;
+    }
+    .skils__title{
+        margin: 83px 0 50px 0;
+    }
+    .skils__sub-title {
+        margin: 0px 0 70px 0;
+    }
+    .skils__programs  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 315px;
+        height: 1067px;
+    }
+    .portf__womans{
+        display: block;
+        margin: 64px 0 0 29px;
+    }
+    .portf__rebooks{
+        display: block;
+        margin: 77px 0 0 29px;
+    }
+    .portf__cameras{
+        display: block;
+        margin: 77px 0 0 29px;
+    }
+    .portf__woman{
+        display: none;
+    }
+    .portf__rebook{
+        display: none;
+    }
+    .portf__camera{
+        display: none;
+    }
+    .portf{
+        height: 1118px;
+    }
+    .portf__portfolio{
+        margin: -90px 0 0 0;
+        padding: 81px 0 0 0;
+    }
+    .portf__braun{
+        margin: 50px 0 0 0;
+    }
+    .end__subtitle{
+        margin:  27px 0 0 50px;
+    }
+    .end__sm{
+        margin: 39px 0 0 29px;
+        width: 316px;
+        height: 42px;
+        background: #000000;
+        border-radius: 50px;
+    }
+    .end__icons{
+        margin: 48px 0 0 20px;
+    }
+}
