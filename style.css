@@ -310,7 +310,7 @@ span::before{
 .portf__cameras{
     display: none;
 }
-@media screen and (max-width: 340px){
+@media screen and (max-width: 479px){
     .line{
         width: 375px;
         max-width: 375px;
